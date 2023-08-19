@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch Repository</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+  <div class="container mt-5 mb-5">
+
+    <div class="row input-group mt-5 align-items-center">
+      <div class="input-group mb-3">
+          <input id="input" type="text" class="form-control form-control-lg" placeholder="Github Username">
+          <button id="btn" class="btn btn-success" type="submit">Get repository</button> 
+      </div>
+    </div>
+
+    <table class="table table-dark table-striped" id="listingTable">
+      <thead>
+        <tr>
+          <th scope="col">Repository Name</th>
+          <th scope="col">language</th>
+          <th scope="col">size</th>
+          <th scope="col">Stars</th>
+          <th scope="col">Watchers</th>
+          <th scope="col">Repository Link</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+
+      </tbody>
+    </table>
+
+    <nav>
+      <ul class="pagination">
+        <li class="page-item">
+          <button class="page-link mx-2" id="PrevButton">Previous</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link" id="nextButton">Next</button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <script src="main.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
